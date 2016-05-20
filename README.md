@@ -1,0 +1,1 @@
+This tool publishes arbitrary json messages to kafka for testing purposes.

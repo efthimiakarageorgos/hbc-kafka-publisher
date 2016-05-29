@@ -1,0 +1,44 @@
+plugins {
+  id "com.github.johnrengelman.shadow" version "1.2.3"
+}
+
+apply plugin: 'java'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.11'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/main/java'
+        }
+        resources {
+            srcDir 'src/main/resources'
+        }
+    }
+}
+
+jar {
+    manifest {
+      attributes  'Implementation-Title': 'Kafka Publisher',
+      'Implementation-Version': 1.0,
+      'Main-Class': 'com.qiotec.qa.tools.kafkapublisher.Main'
+    }
+}
+
+shadowJar {
+  zip64 true
+}
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile 'net.sf.jopt-simple:jopt-simple:5.0.1'
+  compile 'org.apache.kafka:kafka-clients:0.9.0.1'
+  compile "com.fasterxml.jackson.datatype:jackson-datatype-joda:2.6.3"
+  compile "com.google.guava:guava:19.0"
+  compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.21'
+}

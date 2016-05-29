@@ -1,0 +1,9 @@
+[
+  {"key": "key1", "message":"raw string example 1"},
+  {"key": "key1", "message":"raw string example 2"},
+  {"key": "key1", "message":"raw string example 3"},
+
+  {"key": "key2", "message": {"what": "json example 1"}},
+  {"key": "key2", "message": {"what": "json example 2"}},
+  {"key": "key2", "message": {"what": "json example 3"}}
+]

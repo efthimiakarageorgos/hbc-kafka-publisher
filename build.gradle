@@ -1,8 +1,22 @@
 plugins {
   id "com.github.johnrengelman.shadow" version "1.2.3"
+  id "com.github.hierynomus.license" version "0.12.1"
 }
 
 apply plugin: 'java'
+
+license {
+  header rootProject.file('QIO_License.txt')
+  strictCheck true
+  ignoreFailures false
+  ext.inceptionYear = Calendar.getInstance().get(Calendar.YEAR)
+  ext.owner = 'QIO Techonologies'
+  ext.email = 'admi@qiotec.com'
+
+  mapping {
+    scala='JAVADOC_STYLE'
+  }
+}
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.11'

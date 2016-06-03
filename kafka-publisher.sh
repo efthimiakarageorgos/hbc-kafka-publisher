@@ -2,4 +2,4 @@
 
 JARFILE="./build/libs/kafka-publisher-all.jar"
 
-java -jar
+java -jar $JARFILE "$@"

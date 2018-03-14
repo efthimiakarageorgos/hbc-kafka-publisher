@@ -1,5 +1,5 @@
 #!/bin/bash
 
-JARFILE="./build/libs/kafka-publisher-all.jar"
+JARFILE="./build/libs/hbc-kafka-publisher-all.jar"
 
 java -jar $JARFILE "$@"

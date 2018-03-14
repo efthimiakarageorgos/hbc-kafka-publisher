@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.qiotec.qa.tools.kafkapublisher;
+package com.hbc.qa.tools.kafkapublisher;
 
 import java.io.File;
 import java.io.IOException;
@@ -71,7 +71,7 @@ public class Main {
 
     String topic = (String) options.valueOf("topic");
 
-    QioKafkaPublisher publisher = new QioKafkaPublisher((String) options.valueOf("servers"));
+    HbcKafkaPublisher publisher = new HbcKafkaPublisher((String) options.valueOf("servers"));
     try {
       Iterator<JsonNode> objects = node.iterator();
       while (objects.hasNext()) {

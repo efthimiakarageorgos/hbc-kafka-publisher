@@ -6,12 +6,12 @@ plugins {
 apply plugin: 'java'
 
 license {
-  header rootProject.file('QIO_License.txt')
+  header rootProject.file('HBC_License.txt')
   strictCheck true
   ignoreFailures false
   ext.inceptionYear = Calendar.getInstance().get(Calendar.YEAR)
-  ext.owner = 'QIO Techonologies'
-  ext.email = 'admi@qiotec.com'
+  ext.owner = 'HBC Enterprise Services'
+  ext.email = 'admi@hbc.com'
 
   mapping {
     scala='JAVADOC_STYLE'
@@ -37,7 +37,7 @@ jar {
     manifest {
       attributes  'Implementation-Title': 'Kafka Publisher',
       'Implementation-Version': 1.0,
-      'Main-Class': 'com.qiotec.qa.tools.kafkapublisher.Main'
+      'Main-Class': 'com.hbc.qa.tools.kafkapublisher.Main'
     }
 }
 

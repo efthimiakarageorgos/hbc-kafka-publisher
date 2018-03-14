@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.qiotec.qa.tools.kafkapublisher;
+package com.hbc.qa.tools.kafkapublisher;
 
 
 import org.apache.kafka.clients.producer.KafkaProducer;
@@ -25,10 +25,10 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
 
-public class QioKafkaPublisher {
+public class HbcKafkaPublisher {
   private KafkaProducer<String,String> producer;
 
-  public QioKafkaPublisher(String bootstapServers) {
+  public HbcKafkaPublisher(String bootstapServers) {
     Properties props = new Properties();
     props.put("bootstrap.servers", bootstapServers);
     props.put("serializer.class", "kafka.serializer.StringEncoder");

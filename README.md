@@ -18,7 +18,7 @@ Example Use
 ===========
 <pre>
 cd kafka-publisher
-java -jar build/libs/kafka-publisher-all.jar --servers=usnc1a-dkfka02.qiotec.internal:9091,usnc1a-dkfka03.qiotec.internal:9091 --topic=sometopic --delay=1 --messages=example-input-file.json
+java -jar build/libs/hbc-kafka-publisher-all.jar --servers=usnc1a-dkfka02.qiotec.internal:9091,usnc1a-dkfka03.qiotec.internal:9091 --topic=sometopic --delay=1 --messages=example-input-file.json
 </pre>
 
 Unix Build
@@ -32,3 +32,5 @@ Windows Build:
 <pre>
 gradlew.bat shadowJar
 </pre>
+
+ZZZ

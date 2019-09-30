@@ -6,7 +6,7 @@ plugins {
 apply plugin: 'java'
 
 license {
-  header rootProject.file('HBC_License.txt')
+  header rootProject.file('TheCompany_License.txt')
   strictCheck true
   ignoreFailures false
   ext.inceptionYear = Calendar.getInstance().get(Calendar.YEAR)
